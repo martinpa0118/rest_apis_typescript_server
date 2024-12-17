@@ -1,0 +1,20 @@
+  {
+    "compilerOptions": {
+      "outDir": "./dist",                    // Carpeta de salida
+      "rootDir": "./src",                    // Carpeta raíz del código fuente
+      "lib": ["esnext"],                     // Librerías estándar utilizadas
+      "target": "ESNext",                    // Versión de JavaScript generada
+      "moduleResolution": "NodeNext",        // Resolución de módulos
+      "module": "NodeNext",                  // Sistema de módulos usado
+      "strict": false,                       // Deshabilitar modo estricto (puedes habilitarlo si quieres mejores comprobaciones)
+      "sourceMap": true,                     // Generar mapas de fuente para depuración
+      "esModuleInterop": true,               // Compatibilidad con ESModules
+      "declaration": true,                   // Generar archivos de declaración `.d.ts`
+      "experimentalDecorators": true,        // Habilitar decoradores experimentales
+      "emitDecoratorMetadata": true,         // Emitir metadatos para decoradores
+    // Permitir importar archivos con extensiones .ts
+    },
+    "include": ["src/**/*.ts"],              // Archivos TypeScript incluidos
+    "exclude": ["node_modules","src/**/*.test.ts"]          // Archivos de prueba excluidos
+  }
+  
